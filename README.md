@@ -81,7 +81,7 @@ public interface TuRepositorio extends JpaRepository<EntidadA, Long> {
 
 
 ##HTML LOGIN
-/*
+```
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -101,7 +101,7 @@ public interface TuRepositorio extends JpaRepository<EntidadA, Long> {
     </form>
 </body>
 </html>
-*/
+```
 
 @GetMapping("/")
     public String redirectToLogin() {
