@@ -1,3 +1,4 @@
+![image](https://github.com/SpringBootJav/SpringBootDocumentation/assets/133820804/5e20d126-ff1a-4245-810d-a27bb0a5b7af)
 
 	@Autowired
 	private StudentRepo repo;
