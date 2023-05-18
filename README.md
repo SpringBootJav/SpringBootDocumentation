@@ -49,7 +49,7 @@ en el tbody = en el tr th:each="student: ${studentlist}", en el th y td th:text=
 en el metodo que se envia la data Model model, model.addAttribute("studentlist",repo.findAll());
 
 
-##Oracle
+## Oracle
 
 DECLARE
 num1 number;
@@ -67,7 +67,7 @@ END;
 
 
 
-##Query personalizado
+##Q uery personalizado
 
 
 public interface TuRepositorio extends JpaRepository<EntidadA, Long> {
@@ -103,12 +103,12 @@ public interface TuRepositorio extends JpaRepository<EntidadA, Long> {
 </html>
 ```
 
-@GetMapping("/")
+    @GetMapping("/")
     public String redirectToLogin() {
         return "redirect:/login";
     }
 
-@GetMapping("/login")
+    @GetMapping("/login")
     public String showLoginPage() {
         return "login";
     }
