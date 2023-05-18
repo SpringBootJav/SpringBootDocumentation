@@ -67,15 +67,15 @@ END;
 
 
 
-##Q uery personalizado
+## Query personalizado
 
 
-public interface TuRepositorio extends JpaRepository<EntidadA, Long> {
+    public interface TuRepositorio extends JpaRepository<EntidadA, Long> {
 
     @Query("SELECT a FROM EntidadA a INNER JOIN a.entidadB b WHERE b.algunCampo = :valor")
     List<EntidadA> encontrarPorCampoDeEntidadB(@Param("valor") String valor);
 
-}
+    }
 
 
 
